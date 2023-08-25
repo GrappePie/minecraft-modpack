@@ -45,8 +45,10 @@ class Star {
         let velX = (((mouse.x - ctx.canvas.width / 2)) * this.radius) * 0.01;
         let velY = (((mouse.y - ctx.canvas.height / 2)) * this.radius) * 0.01;
         if (mouse.x || mouse.y) {
-            this.x += velX;
-            this.y += velY;
+            //this.x += velX;
+            //this.y += velY;
+            this.x += x;
+            this.y += y;
         } else {
             this.x += x;
             this.y += y;
@@ -122,5 +124,5 @@ function auth(){
 
 function download_mpack(){
     // download zip file from the folder modpack
-    window.location.href = "./modpack/SteamPunk-v6 HF(Modded).zip";
+    window.location.href = "./modpack/SteamPunk.zip";
 }
